@@ -19,7 +19,7 @@ exports.data_recviver_ps = function async(req, res) {
         const rABS = !!reader.readAsBinaryString;
       
         csv()
-  .fromFile('/rcimage.csv')
+  .fromFile('/image.csv')
   .then(function async(jsonArrayObj){ 
     const items=jsonArrayObj
     console.log(items[1])
